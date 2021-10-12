@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Bem-Vindo</title>  
+        <meta charset="utf-8">
+        <meta name="José Gabriel">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> 
+      </head>
+<body>
+    <header> 
+        <div class = "cabecalho">
+         <h1 class = "titulo">Kanine</h1>
+         <h2 class="subtitulo">Melhor site para você adotar</h2>  <h2 class="subtitulo2">seu Animal de estimação</h2>
+        </div>
+        <div class="Lado_Esquerdo">
+      <div class="list1"> 
+            <ul>
+               <li> <a href="main.html"><input id="botao1" type="button" onmouseover="colocarMouse1(this)" onmouseout="tirarMouse1(this)" value="Home"></a>                     
+        </li>
+        </ul>
+               </div>
+               <div>
+            <a href=""><input Id="botaohome2" type="button" onmouseover="colocarMouse(this)" onmouseout="tirarMouse(this)" value="Feedback"></a>
+            
+        </div>
+    </div>
+    <div class="Lado_direito">
+    <a href="cadastro.html"><input id="register" type="button" value="Cadastre- Se" onmouseover="sublinharegister(this)" onmouseout="sublinhaoutregister(this)"></a>
+    <a href="login.html"><input id="login" type="button" value="Login" onmouseover="sublinhalogin(this)" onmouseout="sublinhaoutlogin(this)"> </a>
+    </div>
+    </header>
+    <div class="contener" >
+        <ul id=slider > 
+          <li class="slideractive">
+               <a href="http://google.com"> <img src="fotos kanine/img1.jpg"></a>
+            </li>
+            <li>
+                <a href="http://google.com"> <img src="fotos kanine/Equipe KANINE.jpg"></a>
+            </li>
+           <li> <a href="http://google.com"><img src="fotos kanine/img3.jpg"></li></a>
+
+        </ul>
+    <div>
+    </div>
+    <footer class="conserto1">
+        <ul class="rodape">
+            <li>Telefone</li>
+            <li>(81)98748-6244</li> <br/>
+            <li>WhatsSapp</li>
+           <a href="https://wa.me/5581985196763" target="_blank"><li style="text-decoration: none; color:black;">(81)985196763</li><br/></a>
+            <li>E-mail</li>
+            <a href="mailto:mooneyadriel@gmail.com? Subject=Título%20da%20mensagem" target="_blank"><li style="text-decoration: none; color: black;">mooneyadriel@gmail.com</li><a>
+        </ul>
+    </footer>
+        <script>
+            function colocarMouse(){
+          
+             document.getElementById("botaohome2").style.textDecoration="underline";
+          
+            }
+             function tirarMouse(){
+               document.getElementById("botaohome2").style.textDecoration="none";
+             }
+             function colocarMouse1(){
+             document.getElementById("botao1").style.textDecoration="underline";
+            }
+            function tirarMouse1(){
+                document.getElementById("botao1").style.textDecoration="none";
+             }
+             function sublinhalogin(){
+                 document.getElementById("login").style.textDecoration="underline";
+             }
+             function sublinhaoutlogin(){
+                document.getElementById("login").style.textDecoration="none";
+             }
+             function sublinharegister(){
+                document.getElementById("register").style.textDecoration="underline";
+             }
+             function sublinhaoutregister(){
+                document.getElementById("register").style.textDecoration="none";
+             }
+             function slidersimples(){
+                 var slideractive= $("#slider .slideractive");
+                 var slidernext = slideractive.next().length ? slideractive.next(): $("#slider li:first");
+                slidernext.addClass('slideractive').fadeIn();
+                slideractive.removeClass('slideractive').fadeOut();
+             }
+             $(function(){
+                 $("#slider li:first").fadeIn();
+                 window.setInterval("slidersimples()", 6000);
+             });
+        </script>
+</body>
+</html>

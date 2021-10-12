@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color:white;
+    background-image: url("fotos kanine/imagem\ site.jpg");
+}
+.img{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+ .titulo{
+    background-image:url("fotos kanine/title.jpg"); 
+    background-size: 100%;
+    padding-bottom: 8px;
+     text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 10px;
+    color:white;
+    margin-left: 0px;
+    padding-left: 39%;
+    
+}
+.subtitulo{
+    font-size: 30px;
+    color:black;
+    padding-left: 36%;
+    margin-left: 0%;
+    margin-bottom: 0px;
+}
+.subtitulo2{
+    font-size: 30px;
+    color:black;
+    padding-left: 38%;
+    margin-left: 0%;
+    margin-bottom: 0px;
+}
+.lado_esquerdo{
+    position: absolute;
+    top:20px;
+    display: inline;
+    font-size: 30px;
+}
+#sublista{
+    list-style: none;
+    margin-top: -0.60%;
+    font-size: 20px;
+    position: absolute;
+    padding: 1px 20px;
+    text-align: left;
+    margin-left: 7.1%;
+    top: 11.6%;
+    color: white;
+    background-image: url("fotos kanine/title.jpg");
+    border-bottom-left-radius: 60px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius:100px ;
+    display: none;
+    
+}
+li{
+    text-decoration: solid white;
+    margin-bottom: 10px;
+    color:white;
+}
+a{
+    text-decoration: none;
+}
+#botao1{
+    color: white;
+    position: absolute;
+    top:3.5%;
+    border-width: 4px;
+    border-right: 4px;
+    border-style:solid;
+    border-color: transparent;
+    text-align: center;
+    font-size: 20px;
+    background-color: transparent;
+    padding: 4px 4px;
+    border-radius: 5px;
+    margin-left: 2%;
+    text-decoration: none;
+}
+#botaohome2{
+    color: white;
+    position: absolute;
+    top:3.5% ;
+    border-width: 6px;
+    border-right: 6px;
+    border-style:solid;
+    border-color: transparent;
+
+    text-align: center;
+    font-size: 20px;
+    background-color: transparent;
+    padding-left: 1%;
+    border-radius: 5px;
+    margin-top: 1px;
+    margin-left: 10%;
+    text-decoration: none;
+}
+#register{
+    position: absolute;
+    top:3.5%;
+    left: 87%;
+    font-size: 20px;
+    padding: 4px 4px;
+    padding-right: 2%;
+    background-color:transparent;
+    color: white;
+    border-style: none;
+    border-radius: 6px;
+    text-decoration:none;
+}
+#login{
+        position: absolute;
+        top:4%;
+        left: 80%;
+        margin-right: 10%;
+        padding-right: 5%;
+        font-size: 20px;
+        background-color: transparent;
+        color: white;
+        border-style: none;
+        border-radius: 6px;
+        text-decoration: none;
+
+
+}
+img{
+    width: 100%;
+    height: 100%;
+    margin-left:10%;
+    /*margin-top:1%;*/
+    text-align: center;
+    border:none;
+    border-radius: 24px;
+    box-shadow: 13px 12px 20px black;
+}
+#slider{
+    list-style: none;
+    width: 100%;
+    height: 450px;
+    margin-top:0% ;
+    padding: 0;
+    overflow: hidden;
+    position:relative;
+}
+#slider li{
+
+    position: absolute;
+    z-index: 0;
+    display:none;
+}
+#slider li.slideractive{
+    z-index:1;
+}
+.rodape{
+    background-color:#a9e9d9;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    border-top-width: 8px;
+    border-style: solid;
+    border-color:#10b48f;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 20px;
+    margin-bottom: 0px;   
+}
+li{
+    text-decoration:underline;
+    color: black;
+}
