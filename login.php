@@ -50,7 +50,7 @@
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">me deixe conectado</label>
   </div>
-  <button type="submit" class="btn btn-primary" nome="enviar">Entrar</button>
+  <button type="submit" class="btn btn-primary" name="enviar">Entrar</button>
 </form>
 </div>
 <footer id="footer" class="conserto1">
