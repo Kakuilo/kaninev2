@@ -15,7 +15,7 @@
                             <span class="navbar-toggler-icon"></span>
                           </button>
                           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                            <a class="navbar-brand" href="main.html">Kanine</a>
+                            <a class="navbar-brand" href="main.php">Kanine</a>
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                               <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#equipe">Equipe</a>
@@ -25,8 +25,8 @@
                               </li>
                             </ul>
                             <form class="d-flex">
-                                <a class="nav-link active lado-direito" aria-current="page" href="login.html">Login</a>
-                                <a class="nav-link active lado-direito" aria-current="page" href="cadastro.html">Cadastre-se</a>
+                                <a class="nav-link active lado-direito" aria-current="page" href="login.php">Login</a>
+                                <a class="nav-link active lado-direito" aria-current="page" href="cadastro.php">Cadastre-se</a>
                             </form>
                           </div>
                         </div>
