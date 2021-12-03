@@ -18,17 +18,18 @@ session_start();
                     $sql="SELECT * FROM users WHERE email = '$email' AND senha ='$senha'";
                     $resultado= mysqli_query($connect, $sql);
                     if(mysqli_num_rows($resultado) == 1){
+                        $_SESSION['logado'];
                         header('location: ../teladeinteresses.php');
+                    }else{
+                        $erros[]="Senha inválida";
+                        header('location: ../login.php?erro');
                     }
+                }else{
+                    $erros[]="Email inexistente";
+                    header('location: ../login.php?erro');
                 }
             }
 
 
     endif;
-
-
-
-
-
-
 ?>

@@ -1,3 +1,6 @@
+<?php
+  require_once "php/logando.php";
+?>
 
 <!DOCTYPE html>
 <html>
@@ -40,7 +43,7 @@
   <div class="mb-6" >
     <label for="exampleInputEmail1" class="form-label" name="email">Endereço de Email</label>
     <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">Caso não tenha cadastro se cadastrese <a href="cadastro.php">aqui</a></div>
+    <div id="emailHelp" class="form-text">Caso não tenha cadastro se cadastre-se <a href="cadastro.php">aqui</a></div>
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Senha</label>
