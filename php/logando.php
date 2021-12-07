@@ -2,8 +2,8 @@
 require_once "conexao.php";
 session_start();
     if(isset($_POST['enviar'])):
-            $email= $_POST['email'];
-            $senha= $_POST['senha'];
+            $email= mysqli_escape_string($_POST['email']);
+            $senha= mysqli_escape_string($_POST['senha']);
             $email=filter_input(INPUT_POST,'email',FILTER_SANITIZE_EMAIL);
             if(empty($email) or empty($senha)){
                 $erros[]="preencha os dados";
